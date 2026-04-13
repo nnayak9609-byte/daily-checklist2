@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Daily Checklist</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="container">
+    
+    <h1>📅 Daily Checklist</h1>
+
+    <!-- INPUT -->
+    <input type="text" id="taskInput" placeholder="Enter task...">
+    <button onclick="addTask()">Add</button>
+
+    <!-- TASK LIST -->
+    <ul id="taskList"></ul>
+
+    <!-- PDF SECTION -->
+    <h2>📄 Study Schedule</h2>
+
+    <div style="border:1px solid #ccc; border-radius:10px; padding:10px;">
+      
+      <iframe 
+        src="Updated_Study_Schedule.pdf" 
+        width="100%" 
+        height="500px"
+        style="border:none;">
+      </iframe>
+
+      <p>If PDF not visible:</p>
+      <a href="Updated_Study_Schedule.pdf" target="_blank">
+        📥 Open PDF
+      </a>
+
+    </div>
+
+  </div>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
